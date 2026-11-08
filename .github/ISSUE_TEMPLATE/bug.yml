@@ -1,0 +1,49 @@
+# Oskestra's Report a bug (crates/app/src/bugreport.rs) opens this form with every field below
+# filled in by id, redacted; keep the ids in step with its BUG_FIELDS.
+name: Bug report
+description: Something in Oskestra doesn't work as it should.
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened
+      description: What you did, what you expected and what happened instead.
+      placeholder: |
+        Steps to reproduce:
+        1.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Oskestra version
+  - type: input
+    id: system
+    attributes:
+      label: System
+  - type: textarea
+    id: clis
+    attributes:
+      label: Agent CLIs
+      render: text
+  - type: input
+    id: accounts
+    attributes:
+      label: Accounts' providers
+  - type: textarea
+    id: where
+    attributes:
+      label: Where in the app
+      render: text
+  - type: textarea
+    id: crash
+    attributes:
+      label: Last crash
+      render: text
+  - type: textarea
+    id: logs
+    attributes:
+      label: Daemon log
+      description: The app fills in the last lines, redacted. Remove anything you'd rather not share.
+      render: text
