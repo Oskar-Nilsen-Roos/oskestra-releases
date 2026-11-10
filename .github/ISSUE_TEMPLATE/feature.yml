@@ -1,6 +1,6 @@
 # The sidebar's feedback button (crates/app/src/bugreport.rs) opens this form with the version filled in.
 name: Feature request
-description: Something Oskestra could do, or do better.
+description: Something Oskio could do, or do better.
 labels: [enhancement]
 body:
   - type: textarea
@@ -13,4 +13,4 @@ body:
   - type: input
     id: version
     attributes:
-      label: Oskestra version
+      label: Oskio version
